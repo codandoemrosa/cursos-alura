@@ -12,6 +12,10 @@ h1 {
     text-align: center;
  }
 
+#mission {
+    font-size: 20px;
+}
+
  em strong {
     color: #2c3d94;
  }
