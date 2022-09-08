@@ -25,3 +25,15 @@ h1 {
  em strong {
     color: #2c3d94;
  }
+
+.itens {
+    font-style: italic;
+    text-indent: -0.7rem;
+    list-style-type: none;
+ }
+
+ li::before {
+    font-style: normal;
+    list-style-type: none;
+    content: "💈 ";
+  }
