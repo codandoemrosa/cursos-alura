@@ -2,9 +2,15 @@ body {
     background-color: #b7c0ed;
 }
 
+#banner {
+    width: 100%;
+    border-radius: 20px;
+}
+
 h1 {
     color: #2c3d94;
     text-align: center;
+    margin: 40px;
  }
 
  p {
