@@ -2,7 +2,7 @@ public class TestaMes {
     public static void main(String[] args) {
         int month = 10;
 
-        switch(month) {
+        switch(month) { //switch serve para ifs encadeados
             case 1:
                 System.out.println("O mês é Janeiro.");
                 break;
