@@ -4,7 +4,10 @@ public class TestaMetodo {
         Conta contaCliente = new Conta();
         contaCliente.saldo = 100;
         contaCliente.deposita(50);
-
         System.out.println(contaCliente.saldo);
+
+        contaCliente.saca(50);
+        System.out.println(contaCliente.saldo);
+
     }
 }
