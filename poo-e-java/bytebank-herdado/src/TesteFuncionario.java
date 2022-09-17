@@ -9,5 +9,7 @@ public class TesteFuncionario {
         System.out.println("Olá, " + nico.getNome());
         System.out.println("Sua bonificação é de R$" + nico.getBonificacao());
 
+
+
     }
 }
