@@ -1,5 +1,5 @@
 public class Conta {
-        double saldo;
+        private double saldo;
         int agencia;
         int numeroConta;
         Cliente titular;
@@ -11,7 +11,7 @@ public class Conta {
                         this.saldo -= valor; //saldo = saldo - valor;
                         return true;
                 } else {
-                        System.out.println("Você não tem saldo suficiente!");
+                        System.out.println("Você não tem saldo suficiente para realizar a transferência!");
                         return false;
                 }
         }
@@ -25,4 +25,9 @@ public class Conta {
                         return false;
                 }
         }
+
+        public double getSaldo(){
+                return this.saldo;
+        }
+
 }
