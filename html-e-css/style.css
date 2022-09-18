@@ -1,26 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .mapa-conteudo, .video, .beneficios{
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav { 
+        position: absolute;
+    }
+
+    .lista-beneficios, .bg-beneficios {
+        width: 100%;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
     background: #AE9586;
-    padding: 20px 0;
+    margin: 0 auto;
 }
 
 .caixa {
     position: relative;
-    align-items: center;
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
 }
 
 nav {
-    display: inline-block;
-    align-items: center;
     position: absolute;
-    top: 50%;
+    top: 110px;
     right: 0;
 }
 
@@ -43,26 +58,8 @@ nav a:hover {
 }
 
 /* css da página inicial */
-
-.banner-container {
-    max-width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 .banner {
-    position: relative;
-    bottom: 200px;
     width: 100%;
-
-}
-
-.principal {
-    padding: 3em 0;
-    background: #FEFEFE;
-    width: 640px;
-    margin: 0 auto;
 }
 
 .titulo-principal {
@@ -72,19 +69,19 @@ nav a:hover {
     clear: left;
 }
 
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 640px;
+    margin: 0 auto;
+}
+
 .titulo-principal::first-letter{
     font-weight: bold;
 }
 
-p::first-line{
-    font-style: italic;
-}
-
 .titulo-principal::before{
     content: "| ";
-}
-.titulo-principal::after{
-
 }
 
 .principal p{
@@ -238,10 +235,16 @@ td, th {
     color: #FFFFFF;
 }
 
+
 .bg-beneficios {
     width: 100%;
     opacity: 0.3;
     position: relative;
+}
+
+.bg-beneficios:hover {
+    opacity: 0.6;
+    transition: 0.5s ease-in;
 }
 
 .conteudo-beneficios {
