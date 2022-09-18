@@ -4,33 +4,67 @@
     <head>
         <meta charset="UTF-8">
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <header>
-            <h1>Barbearia Alura</h1>
+        <header> 
+            <div class="caixa">
+                <h1><img src="assets/logo.png" class="logo" style="width: 100px"></h1> 
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-
-       <div class="principal"> 
-            <img id="banner" src="assets\banner.jpg">
-            <h2>Sobre a Barbearia Alura</h2>
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e
-                barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-            <p id="mission"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de
-                excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        <div class="banner-container">
+            <img class="banner" src="assets\banner.jpg">
         </div>
+        <main>
+            <section class="principal">
+                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-        <div class="beneficios">
-            <h3>Benefícios</h3>
-            <ul>
-                <li class="itens">Atendimento aos clientes</li>
-                <li class="itens">Espaço diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais qualificados</li>
-            </ul>
-            <img src="assets/beneficios.jpg" class="imagembeneficios">
-        </div>
+                <img class="utensilios" src="assets/utensilios.jpg" alt="Utensilios de barbeiro.">
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </section> 
+
+            <section class="mapa">
+                <div class="mapa-conteudo">
+                    <h3 class="titulo-principal">Nos encontre!</h3>
+                    <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1065566250013!2d-46.653905486062385!3d-23.56461618468122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sGrupo%20Alura!5e0!3m2!1spt-BR!2sbr!4v1663464426011!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="beneficios">
+                <div class="conteudo-beneficios">
+                    <h3 class="titulo-principal">Benefícios</h3>
+                    <ul class="lista-beneficios">
+                        <li class="itens">Atendimento aos clientes</li>
+                        <li class="itens">Espaço diferenciado</li>
+                        <li class="itens">Localização</li>
+                        <li class="itens">Pontualidade</li>
+                        <li class="itens">Limpeza</li>
+                    </ul>
+                </div>
+                <img class="bg-beneficios" src="assets/beneficios.jpg">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+         </main>
+
+      
+        <footer>
+            <img src="assets/logo-branco.png">
+            <p class="copyright"> &copy; Copyright Barbearia Alura . 2022</p>
+        </footer>
     </body>
-
 </html>
